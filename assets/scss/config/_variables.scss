@@ -1,0 +1,36 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root{
+   /*========== Colors ==========*/
+   /*Color mode HSL(hue, saturation, lightness)*/
+   --first-color: hsl(4, 82%, 54%);
+   --first-color-alt: hsl(4, 78%, 50%);
+   --hover-color: hsl(0, 0%, 95%);
+   --title-color: hsl(0, 0%, 12%);
+   --text-color: hsl(0, 0%, 40%);
+   --white-color: hsl(0, 0%, 100%);
+   --border-color: hsl(0, 0%, 72%);
+   --body-color: hsl(0, 0%, 100%);
+
+   /*========== Font and typography ==========*/
+   /*.5rem = 8px | 1rem = 16px ...*/
+   --body-font: "Montserrat", sans-serif;
+   --second-font: "Unbounded", sans-serif;
+
+   --bigger-font-size: 1.5rem;
+   --normal-font-size: .938rem;
+   --small-font-size: .875rem;
+
+   // Responsive typography
+   @media screen and (min-width: 1150px){
+      --bigger-font-size: 1.75rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .938rem;
+   }
+
+	/*========== Font weight ==========*/
+   --font-regular: 400;
+   --font-semi-bold: 600;
+}

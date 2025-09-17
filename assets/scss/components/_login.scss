@@ -1,0 +1,141 @@
+/*=============== LOGIN ===============*/
+.login{
+   height: 100vh;
+
+   &__container{
+      align-items: center;
+   }
+   &__swiper{
+      display: none;
+   }
+   &__data{
+      text-align: center;
+      color: var(--title-color);
+   }
+   &__title{
+      font-size: var(--bigger-font-size);
+      font-family: var(--second-font);
+      margin-bottom: 3rem;
+   }
+   &__description{
+      font-size: var(--small-font-size);
+      margin-bottom: 1rem;
+   }
+   &__button,
+   &__button-border{
+      width: 100%;
+      padding: 1rem;
+      border-radius: .5rem;
+      font-weight: var(--font-semi-bold);
+      cursor: pointer;
+      transition: background-color .4s, box-shadow .4s;
+   }
+   &__button{
+      background-color: var(--first-color);
+      color: var(--white-color);
+
+      &:hover{
+         background-color: var(--first-color-alt);
+         box-shadow: 0 8px 24px hsla(4, 80%, 40%, .4);
+      }
+   }
+   &__button-border{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: .5rem;
+      background-color: var(--white-color);
+      border: 2px solid var(--border-color);
+      color: var(--title-color);
+
+      & i{
+         font-size: 1.5rem;
+         font-weight: initial;
+      }
+      &:hover{
+         background-color: var(--hover-color);
+      }
+   }
+   &__line{
+      position: relative;
+      justify-self: center;
+      font-weight: var(--font-semi-bold);
+      color: var(--title-color);
+
+      &::before,
+      &::after{
+         content: '';
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         width: 96px;
+         height: 1px;
+         background-color: var(--border-color);
+         margin: auto 0;
+      }
+      &::before{
+         right: 1.5rem;
+      }
+      &::after{
+         left: 1.5rem;
+      }
+   }
+   &__content{
+      row-gap: .75rem;
+      margin-bottom: .75rem;
+   }
+   &__box{
+      position: relative;
+      display: flex;
+      align-items: center;
+      background-color: var(--white-color);
+   }
+   &__input{
+      width: 100%;
+      background: none;
+      border: 2px solid var(--border-color);
+      padding: 1rem 1.25rem;
+      border-radius: .5rem;
+      color: var(--title-color);
+      font-weight: var(--font-semi-bold);
+      transition: border .4s;
+      z-index: 1;
+
+      &::placeholder{
+         color: var(--title-color);
+      }
+      &:focus {
+         border-color: var(--title-color);
+      }
+      &:autofill{
+         transition: background-color 6000s, color 6000s;
+      }
+   }
+   &__box i{
+      position: absolute;
+      right: 1.25rem;
+      font-size: 1.5rem;
+      color: var(--title-color);
+   }
+   &__eye{
+      z-index: 10;
+      cursor: pointer;
+   }
+   &__forgot{
+      display: block;
+      width: max-content;
+      margin: 0 0 1.5rem auto;
+      font-size: var(--small-font-size);
+      color: var(--first-color);
+   }
+   &__switch{
+      display: flex;
+      justify-content: center;
+      column-gap: .5rem;
+      font-size: var(--small-font-size);
+      color: var(--title-color);
+   }
+   &__sign{
+      color: var(--first-color);
+   }
+}

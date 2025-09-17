@@ -1,0 +1,97 @@
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (min-width: 540px){
+   .login__area{
+      grid-template-columns: 340px;
+      justify-content: center;
+   }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px){
+   .container{
+      margin-inline: auto;
+   }
+
+   .login{
+      place-items: center;
+
+      &__container{
+         grid-template-columns: 592px 340px;
+         column-gap: 5rem;
+         width: 1110px;
+         height: 700px;
+         background-color: var(--body-color);
+         box-shadow: 0 0 24px hsla(0, 0%, 0%, .15);
+         padding: .75rem;
+         border-radius: 3rem;
+      }
+      &__swiper{
+         display: block;
+         overflow: hidden;
+         height: 100%;
+         position: relative;
+         border-radius: 2.5rem;
+         margin-inline: initial;
+         clip-path: path("M0 37.8182C0 16.9318 17.9784 0 40.156 0H551.843C574.902 0 593.224 18.2478 591.936 39.9306L556.273 640.294C555.083 660.328 537.487 676 516.18 676H40.156C17.9784 676 0 659.068 0 638.182V37.8182Z");
+         
+         &-img{
+            width: 592px;
+            object-fit: cover;
+            border-radius: 2.5rem;
+            clip-path: path("M0 37.8182C0 16.9318 17.9784 0 40.156 0H551.843C574.902 0 593.224 18.2478 591.936 39.9306L556.273 640.294C555.083 660.328 537.487 676 516.18 676H40.156C17.9784 676 0 659.068 0 638.182V37.8182Z");
+         }
+         &-data,
+         &-social{
+            position: absolute;
+            z-index: 10;
+            color: var(--white-color);
+         }
+         &-data{
+            top: 5.5rem;
+            left: 3rem
+         }
+         &-subtitle{
+            font-size: var(--small-fomt-size);
+            font-weight: var(--font-semi-bold);
+            margin-bottom: .5rem;
+         }
+         &-title{
+            font-size: var(--bigger-font-size);
+            font-family: var(--second-font);
+         }
+         &-social{
+            left: 3rem;
+            bottom: 4rem;
+         }
+         &-links{
+            display: flex;
+            align-items: center;
+            column-gap: .75rem;
+         }
+         &-link{
+            color: var(--white-color);
+            font-size: 1.5rem;
+            transition: transform .4s;
+
+            &:hover{
+               transform: translateY(-.25rem);
+            }
+         }
+      }
+      & .swiper-pagination-bullets{
+         width: initial;
+         left: initial;
+         right: 5rem;
+         bottom: 4rem;
+      }
+      & .swiper-pagination-bullet{
+         background-color: var(--white-color);
+         opacity: .6;
+         transition: opacity .4s;
+      }
+      & .swiper-pagination-bullet-active{
+         opacity: 1;
+      }
+   }
+}

@@ -1,0 +1,52 @@
+========== LOGIN FORM ==========
+.login__title
+Welcome Back 👋
+
+.login__description
+Please enter you details.
+
+.login__button-border
+Sign in with Apple
+
+.login__line
+or
+
+.login__input
+Email - Password
+
+.login__forgot
+Forgot Password?
+
+.login__button
+Log In
+
+.login__switch
+Don’t have an account?
+
+.login__sign
+Sign Up
+
+
+========== LOGIN FORM SWIPER ==========
+/* Path Mask */
+path("M0 37.8182C0 16.9318 17.9784 0 40.156 0H551.843C574.902 0 593.224 18.2478 591.936 39.9306L556.273 640.294C555.083 660.328 537.487 676 516.18 676H40.156C17.9784 676 0 659.068 0 638.182V37.8182Z")
+
+.login__swiper-subtitle
+Welcome Back
+
+.login__swiper-title
+Hello Developer, <br> Sign In To Get Started
+
+.login__swiper-subtitle
+Our Social Media
+
+.login__swiper-links
+https://www.facebook.com/bedimcode/
+
+https://www.instagram.com/bedimcode/
+
+https://x.com/bedimcode
+
+https://dribbble.com/
+
+https://github.com/bedimcode
